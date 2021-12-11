@@ -6,54 +6,54 @@ import (
 )
 
 const (
-	Black = iota + 30
-	Red
-	Green
-	Yellow
-	Blue
-	Magenta
-	Cyan
-	White
+	BlackX = iota + 30
+	RedX
+	GreenX
+	YellowX
+	BlueX
+	MagentaX
+	CyanX
+	WhiteX
 )
 
 // Black shows the color black
 func Black(msg string) string {
-    return setColor(msg, 0, 0, Black)
+    return setColor(msg, 0, 0, BlackX)
 }
 
 // Red shows the color red
 func Red(msg string) string {
-    return setColor(msg, 0, 0, Red)
+    return setColor(msg, 0, 0, RedX)
 }
 
 // Green shows the color green
 func Green(msg string) string {
-    return setColor(msg, 0, 0, Green)
+    return setColor(msg, 0, 0, GreenX)
 }
 
 // Yellow shows the color yellow
 func Yellow(msg string) string {
-    return setColor(msg, 0, 0, Yellow)
+    return setColor(msg, 0, 0, YellowX)
 }
 
 // Blue shows the color blue
 func Blue(msg string) string {
-    return setColor(msg, 0, 0, Blue)
+    return setColor(msg, 0, 0, BlueX)
 }
 
 // Magenta shows the color magenta
 func Magenta(msg string) string {
-    return setColor(msg, 0, 0, Magenta)
+    return setColor(msg, 0, 0, MagentaX)
 }
 
 // Cyan shows the color cyan
 func Cyan(msg string) string {
-    return setColor(msg, 0, 0, Cyan)
+    return setColor(msg, 0, 0, CyanX)
 }
 
 // White shows the color white
 func White(msg string) string {
-    return setColor(msg, 0, 0, White)
+    return setColor(msg, 0, 0, WhiteX)
 }
 
 // setColor sets color for msg
