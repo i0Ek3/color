@@ -2,6 +2,10 @@
 
 > color.go modified from https://github.com/wxnacy/study/blob/master/goland/src/color/main.go, thanks to the author.
 
+## Feature
+
+Support multiple text output.
+
 
 ## Getting Started
 
@@ -28,10 +32,6 @@ func main() {
     fmt.Println(color.Black(text))
 }
 ```
-
-## TODO
-
-- refactor
 
 
 ## Credit
