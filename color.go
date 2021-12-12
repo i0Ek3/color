@@ -64,3 +64,23 @@ func setColor(conf, bg, text int, msg ...string) string {
     }
     return fmt.Sprintf("%c[%d;%d;%dm%s%c[0m", 0x1B, conf, bg, text, res, 0x1B)
 }
+
+// Colorize made for debug use
+func Colorize(colorName string, str ...string) {
+    switch colorName {
+    case "white":
+        fmt.Println(White(str...))
+    case "black":
+        fmt.Println(Black(str...))
+    case "green":
+        fmt.Println(Green(str...))
+    case "yellow":
+        fmt.Println(Yellow(str...))
+    case "red":
+        fmt.Println(Red(str...))
+    case "cyan":
+        fmt.Println(Cyan(str...))
+    case "magenta":
+        fmt.Println(Magenta(str...))
+    }
+}

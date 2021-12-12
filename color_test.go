@@ -17,4 +17,6 @@ func TestColor(t *testing.T) {
     fmt.Println(Green(hi, text))
     fmt.Println(Red(hi, text))
     fmt.Println(Magenta(hi, text))
+
+    Colorize("red", hi, text)
 }

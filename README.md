@@ -26,10 +26,15 @@ import (
 )
 
 func main() {
-    text := "hi"
+    hi := "hi"
+    color := "color"
 
-    fmt.Println(color.Cyan(text))
-    fmt.Println(color.Black(text))
+    fmt.Println(color.Cyan(hi, color))
+    fmt.Println(color.Black(hi, color))
+
+    fmt.Println(color.Red(str...))
+    // Or just use Colorize()
+    Colorize("blue", str...)
 }
 ```
 
