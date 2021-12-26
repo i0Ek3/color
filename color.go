@@ -66,21 +66,23 @@ func setColor(conf, bg, text int, msg ...string) string {
 }
 
 // Colorize made for debug use
-func Colorize(colorName string, str ...string) {
+func Colorize(colorName string, str ...string) string {
     switch colorName {
     case "white":
-        fmt.Println(White(str...))
+        return White(str...)
     case "black":
-        fmt.Println(Black(str...))
+        return Black(str...)
     case "green":
-        fmt.Println(Green(str...))
+        return Green(str...)
     case "yellow":
-        fmt.Println(Yellow(str...))
+        return Yellow(str...)
     case "red":
-        fmt.Println(Red(str...))
+        return Red(str...)
     case "cyan":
-        fmt.Println(Cyan(str...))
+        return Cyan(str...)
     case "magenta":
-        fmt.Println(Magenta(str...))
+        return Magenta(str...)
+    default:
+        return UnsupportedColor
     }
 }

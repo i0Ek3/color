@@ -34,7 +34,7 @@ func main() {
 
     fmt.Println(color.Red(str...))
     // Or just use Colorize()
-    Colorize("blue", str...)
+    fmt.Println(Colorize("blue", str...))
 }
 ```
 
